@@ -51,3 +51,16 @@ sysupgrade --url=https://github.com/OpenIPC/builder/releases/download/latest/t31
 ```
 sysupgrade --url=https://github.com/OpenIPC/builder/releases/download/latest/t31_lite_xiaomi-mjsxj03hl-jxq03-nor.tgz -k -r -z
 ```
+
+## Majestic Settings
+```
+audio:
+  enabled: true
+  outputEnabled: true
+  speakerPin: 63
+```
+## Play audio
+```
+sox sample-12s.mp3 -t raw -r 8000 -b 16 -c 1 test.pcm
+curl -u root:12345 --data-binary @test.pcm http://x.x.x.x/play_audio
+```

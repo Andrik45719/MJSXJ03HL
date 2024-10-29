@@ -1,14 +1,14 @@
 # Open source firmware on Xiaomi Mi Camera 2K Magnetic Mount (Ingenic T31)
 # WARN! tested on T31N/T31ZL chipset with jxq03p sensor.
 ## U-Boot update
-- Copy content of folder SD_uboot to FAT32 formated SD-Card.
+- Copy content of folder SD_uboot to FAT32 formatted SD-Card.
 - Power off camera.
 - Insert SD-Card into camera press and hold reset.
 - Power on camera and wait until LED is white.
 - Wait until LED is Orange.
 - Reset camera by power cycle.
 - Wait until Blue LED (Linux image backup done).
-- Power off camera and remoce SD-Card.
+- Power off camera and remove SD-Card.
 - Copy fwbkup.bin somewhere into secure place.
   
 ## Flashing [thingino firmware](https://github.com/themactep/thingino-firmware)
@@ -35,4 +35,13 @@ u-boot is modified version of (https://github.com/gtxaspec/u-boot-ingenic) isvp_
 ## Determine SOC model
 ```
 soc -m
+```
+## sysupgrade
+!!!Run partial update only to prevent U-Boot update!!!
+- Download [thingino-firmware update](https://github.com/themactep/thingino-firmware/releases/download/firmware_update/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin)
+- Copy it to FAT32 formatted SD-Card
+- Insert card into camera slot
+- Run sysupgrade
+```
+ sysupgrade /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin
 ```

@@ -1,5 +1,5 @@
 # Open source firmware on Xiaomi Mi Camera 2K Magnetic Mount (Ingenic T31)
-# WARN! tested on T31ZL chipset with jxq03p sensor.
+# WARN! tested on T31N/T31ZL chipset with jxq03p sensor.
 ## U-Boot update
 - Copy content of folder SD_uboot to FAT32 formated SD-Card.
 - Power off camera.
@@ -31,3 +31,8 @@ u-boot is modified version of (https://github.com/gtxaspec/u-boot-ingenic) isvp_
 - Added gpio_button=51i and gpio_mmc_power=54o into default env
 - Removed CONFIG_RANDOM_MACADDR
 - Fixed boot.scr source command call.
+
+## Determine SOC model
+```
+soc -m
+```

@@ -49,3 +49,4 @@ or
 ```
 flashcp /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin /dev/mtd5
 ```
+https://github.com/themactep/thingino-firmware/wiki/Updating-Firmware#troubleshooting

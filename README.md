@@ -37,16 +37,17 @@ u-boot is modified version of (https://github.com/gtxaspec/u-boot-ingenic) isvp_
 soc -m
 ```
 ## sysupgrade
-!!!Run partial update only to prevent U-Boot update!!!
-- Download [thingino-firmware update](https://github.com/themactep/thingino-firmware/releases/download/firmware_update/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin)
-- Copy it to FAT32 formatted SD-Card
-- Insert card into camera slot
-- Run sysupgrade
 ```
- sysupgrade /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin
+fw_setenv osmem 52M@0x0; fw_setenv rmem 12M@0x3400000; reboot
+```
+```
+sysupgrade -f
 ```
 or
+- download [thingino-firmware update](https://github.com/themactep/thingino-firmware/releases/download/firmware_update/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin)
+- copy it to FAT32 formatted SD-Card
+- insert card into camera slot
+- run:
 ```
 flashcp /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin /dev/mtd5
 ```
-https://github.com/themactep/thingino-firmware/wiki/Updating-Firmware#troubleshooting

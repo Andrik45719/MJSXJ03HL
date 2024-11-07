@@ -32,6 +32,7 @@ u-boot is modified version of (https://github.com/gtxaspec/u-boot-ingenic) isvp_
 - Removed CONFIG_RANDOM_MACADDR
 - Fixed boot.scr source command call.
 
+# thingino-firmware
 ## Determine SOC model
 ```
 soc -m
@@ -51,3 +52,8 @@ or
 ```
 flashcp /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin /dev/mtd5
 ```
+
+ ## audio settings
+ - PCM 16000
+ - ALC 7
+ - 

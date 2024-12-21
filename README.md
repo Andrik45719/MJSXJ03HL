@@ -42,7 +42,10 @@ soc -m
 fw_setenv osmem 52M@0x0; fw_setenv rmem 12M@0x3400000; reboot
 ```
 ```
-sysupgrade -f
+sysupgrade -p
+```
+```
+fw_setenv osmem 32M@0x0; fw_setenv rmem 32M@0x2000000; reboot
 ```
 or
 - download [thingino-firmware update](https://github.com/themactep/thingino-firmware/releases/download/firmware_update/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin)

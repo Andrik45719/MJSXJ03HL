@@ -3,3 +3,4 @@ insert it into camera
 power on camera
 blinking LED (red->white->blue) is active state
 wait until camera reboots
+fw backup will be saved to SD card

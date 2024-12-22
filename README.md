@@ -2,10 +2,7 @@
 # WARN! tested on T31N/T31ZL chipset with jxq03p sensor.
 ## Flashing [thingino firmware](https://github.com/themactep/thingino-firmware)
 - Copy content of folder [SD_thingino](/SD_thingino) to FAT32 formatted SD-Card.
-- Power off camera.
-- Insert SD-Card into camera.
-- Power on camera and wait until LED is white.
-- Wait until LED is blinking (red->blue->white).
+- Insert SD-Card into camera and power on it.
 - Wait until camera resets about 3 minutes.
 - Full fw backup will be saved to SD card as xiaomi_mjsxj03hl_t31XX_jxq03X.bin
 - Connect to the camera Wi-Fi AP.

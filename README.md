@@ -3,8 +3,10 @@
 ## Flashing [thingino firmware](https://github.com/themactep/thingino-firmware)
 - Copy content of folder [SD_thingino](/SD_thingino) to FAT32 formatted SD-Card.
 - Insert SD-Card into camera and power on it.
+- Blinking LED (red->orange->blue) is active state indicator.
 - Wait until camera resets about 3 minutes.
 - Full fw backup will be saved to SD card as xiaomi_mjsxj03hl_t31XX_jxq03X.bin
+- Reset camera by power cycle.
 - Connect to the camera Wi-Fi AP.
 - Open http://172.16.0.1/ and setup camera.
 - Apply settings and wait minute then powercycle it.

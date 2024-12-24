@@ -1,5 +1,5 @@
 # Open source firmware on Xiaomi Mi Camera 2K Magnetic Mount (Ingenic T31)
-# WARN! tested on T31N/T31ZL chipset with jxq03p sensor.
+# WARN! Tested on T31ZL/T31N/T31L chipset with jxq03p sensor.
 ## Flashing [thingino firmware](https://github.com/themactep/thingino-firmware)
 - Copy content of folder [SD_thingino](/SD_thingino) to FAT32 formatted SD-Card.
 - Insert SD-Card into camera and power on it.

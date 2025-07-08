@@ -1,6 +1,7 @@
 # Open source firmware on Xiaomi Mi Camera 2K Magnetic Mount (Ingenic T31)
 # WARN! Tested on T31ZL/T31N/T31L chipset with jxq03p sensor.
 ## Flashing [thingino firmware](https://github.com/themactep/thingino-firmware)
+
 - Copy content of folder [SD_thingino](/SD_thingino) to FAT32 formatted SD-Card.
 - Insert SD-Card into camera and power on it.
 - Blinking LED (red->orange->blue) is active state indicator.
@@ -50,3 +51,24 @@ flashcp /mnt/mmcblk0p1/thingino-xiaomi_mjsxj03hl_t31n_jxq03p-update.bin /dev/mtd
  - PCM 16000
  - ALC 7
  - 
+
+### &nbsp;  
+### ATTENTION! SD memory card must be formatted in the Fat32 file system with the **MBR** table (MS-DOS).
+### SD card with GPT table won't work!
+### If you are using Windows OS - GPT is the most common and default formatting.
+### You can use following commands (in an elevated command prompt window) to make it proper.
+###  
+```
+diskpart
+```
+```
+list disk
+```
+```
+select disk X
+```
+&nbsp;&nbsp;&nbsp;&nbsp; X in above command should be the sd card' disk number from list disk result!
+```
+convert mbr
+```
+### 

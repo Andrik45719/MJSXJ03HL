@@ -32,8 +32,15 @@ soc -m
 ```
 fw_setenv osmem 52M@0x0; fw_setenv rmem 12M@0x3400000; reboot
 ```
+check SOC and SENSOR models
 ```
-sysupgrade -p
+soc -m
+dmesg | grep jxq03
+```
+edit URL for model of your camera
+```
+sysupgrade -x https://github.com/themactep/thingino-firmware/releases/download/firmware-2025-09-15/thingino-xiaomi_mjsxj03hl_t31X_jxq03X_rtl8189ftv.bin
+
 ```
 ```
 fw_setenv osmem 32M@0x0; fw_setenv rmem 32M@0x2000000; reboot
